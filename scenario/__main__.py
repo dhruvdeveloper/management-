@@ -70,11 +70,10 @@ from telethon import Button, events
 @telethn.on(events.NewMessage(pattern="/alive"))
 async def awake(event):
   scenario = event.sender.first_name
-  scenario = "**♡ I,m scenario** \n\n"
-  scenario += "**♡ I'm Working With Awesome Speed**\n\n"
-  scenario += "**♡ Scenario: LATEST Version**\n\n"
-  scenario += "**♡ My Creator:** [TeamScenario](t.me/TeamScenario)\n\n"
-  scenario += "**♡ Python-Telegram-Bot: v13.7**\n\n"
+  scenario = "**This Is Wɪʟᴅ ꭙ ʀᴏʙᴏᴛ​** \n\n"
+  scenario += "**My Speed Is god **\n\n"
+  scenario += "** My Creator:** [Aakash](t.me/wildupdates)\n\n"
+  scenario += "** Python-Telegram-Bot: v13.7**\n\n"
   scenario_BUTTON = [
       [
           Button.url("Support", f"https://t.me/{SUPPORT_CHAT}"),
@@ -117,14 +116,14 @@ HELP_MSG = "Click the button below to get help menu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [Scenario](https://telegra.ph/file/7b8c52bd4c7b8b35ece20.jpg) 」────
-*Hola! {},*
-*I am {} Anime themed advance group management bot with a lot of Sexy Features.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-• *Uptime:* `{}`
-• `{}` *users, across* `{}` *chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Help Buttons Below To Know My Abilities ××
+────「 [Wɪʟᴅ ꭙ ʀᴏʙᴏᴛ​](https://telegra.ph/file/b7300614a7f4004b13367.jpg) 」────
+Hᴇʏ {} ,𖣘
+   ๏ Tʜɪs ɪs Wɪʟᴅ ꭙ ʀᴏʙᴏᴛ​ !
+   ➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
+   Mʏ Oᴡɴᴇʀ @NotAakash 
+   Aɴʏ Qᴜᴇʀɪᴇs??  Join Our Bot Support @GFC_SUPPORT ..
+   ──────────────────
+   ๏ Cʟɪᴄᴋ /help ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs..
 """
 
 GROUP_START_TEXT = """
@@ -135,19 +134,19 @@ Haven't slept since: {}
 buttons = [
     [
                         InlineKeyboardButton(
-                            text=f"⚓ ❄️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❄️ ⚓",
-                            url="https://t.me/ScenarioXbot?startgroup=true")
+                            text=f"ADD ME IN GROUPS",
+                            url="https://t.me/WILDX_RObot?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="☘️ ᴀʙᴏᴜᴛ ☘️", callback_data="scenario_"),
-                       InlineKeyboardButton(text="⚔️ ɪɴʟɪɴᴇ ⚔️", switch_inline_query_current_chat=""),
+                       InlineKeyboardButton(text="About Me", callback_data="scenario_"),
+                       InlineKeyboardButton(text="Try Inline", switch_inline_query_current_chat=""),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="✨ sᴜᴘᴘᴏʀᴛ ✨",
+                             text="Support",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="✨ ᴜᴩᴅᴀᴛᴇs ✨",
+                             text="Updates",
                              url=f"https://t.me/{UPDATES_CHANNEL}")
                      ],
                      [
@@ -160,15 +159,13 @@ buttons = [
                     
 HELP_STRINGS = """
 *Main* commands available:
- ➛ /help: bot will pm you this message.
- ➛ /help <module name>: pm you info about that module.
- ➛ /donate: information on how to donate!
- ➛ /settings:
-   ❂ in PM: will send you your settings for all supported modules.
-   ❂ in a group: will redirect you to pm, with all that chat's settings.
+ • /start: Starts me, can be used to check I'm alive or not.
+• /help: PM's you this message.
+• /donate: Get Details about Donating which help to improve bots speeds and more.
+Click on the buttons below to get documentation about specific modules!
 """
 
-DONATE_STRING = """❂ I'm Free for Everyone ❂"""
+DONATE_STRING = """My Owner Is Damn Rich, No Need."""
 
 
 IMPORTED = {}
@@ -409,7 +406,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "╒═══「☘️ help for *{}* ☘️」═══\n".format(
+                "╒═══「☘️help for *{}* 」═══\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -419,7 +416,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="[Back ]", callback_data="help_back")]]
                 ),
             )
 
@@ -470,7 +467,7 @@ def scenario_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="[► Back ◄]", callback_data="scenario_back")
+                    InlineKeyboardButton(text="[ Back ]", callback_data="scenario_back")
                  ]
                 ]
             ),
@@ -526,7 +523,7 @@ def get_help(update, context):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="[Back ]", callback_data="help_back")]]
             ),
         )
 
@@ -697,7 +694,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 5540577046 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
