@@ -70,7 +70,7 @@ from telethon import Button, events
 @telethn.on(events.NewMessage(pattern="/alive"))
 async def awake(event):
   scenario = event.sender.first_name
-  scenario = "**This Is Wɪʟᴅ ꭙ ʀᴏʙᴏᴛ​** \n\n"
+  scenario = "**This Is Wɪʟᴅ ꭙ ʀᴏʙᴏᴛ** \n\n"
   scenario += "**My Speed Is god **\n\n"
   scenario += "** My Creator:** [Aakash](t.me/wildupdates)\n\n"
   scenario += "** Python-Telegram-Bot: v13.7**\n\n"
@@ -116,9 +116,9 @@ HELP_MSG = "Click the button below to get help menu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [Wɪʟᴅ ꭙ ʀᴏʙᴏᴛ​](https://telegra.ph/file/b7300614a7f4004b13367.jpg) 」────
+────「 [Wɪʟᴅ ꭙ ʀᴏʙᴏᴛ](https://telegra.ph/file/b7300614a7f4004b13367.jpg) 」────
 Hᴇʏ {} ,𖣘
-   ๏ Tʜɪs ɪs Wɪʟᴅ ꭙ ʀᴏʙᴏᴛ​ !
+   ๏ Tʜɪs ɪs Wɪʟᴅ ꭙ ʀᴏʙᴏᴛ !
    ➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
    Mʏ Oᴡɴᴇʀ @NotAakash 
    Aɴʏ Qᴜᴇʀɪᴇs??  Join Our Bot Support @GFC_SUPPORT ..
